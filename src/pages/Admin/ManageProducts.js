@@ -58,7 +58,7 @@ const ManageProducts = () => {
 
   return (
     <div className="container mt-4">
-      <h2>Manage Products</h2>
+      {/* <h2>Manage Products</h2> */}
 
       {/* Pending Products Section */}
       <h4 className="mt-4">Pending for Approval</h4>
