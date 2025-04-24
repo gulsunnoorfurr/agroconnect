@@ -56,7 +56,8 @@ const MyProducts = () => {
                     <br />
                     <strong>Market Price:</strong> ₹{prod.marketPrice}
                     <br />
-                    <strong>Quantity:</strong> {prod.quantity}kg
+                    <strong>Quantity:</strong> {prod.quantity}{" "}
+                    {prod.quantityUnit}
                     <br />
                     <strong>Location:</strong> {prod.location}
                     <br />
@@ -87,7 +88,7 @@ const MyProducts = () => {
                           ? "text-success"
                           : prod.status === "pending"
                           ? "text-warning"
-                          : "text-muted"
+                          : "text-danger"
                       }>
                       {prod.status || "Not Submitted"}
                     </span>
