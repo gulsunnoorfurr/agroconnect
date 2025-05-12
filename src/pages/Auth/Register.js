@@ -1,7 +1,7 @@
 // src/pages/Auth/Register.js
 import React, { useState } from "react";
 import { register } from "../../services/authService";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -63,6 +63,9 @@ const Register = () => {
           Register
         </button>
       </form>
+      <div className="text-center mt-3">
+        <Link to="/login">Already have an Account? Login</Link>
+      </div>
     </div>
   );
 };
